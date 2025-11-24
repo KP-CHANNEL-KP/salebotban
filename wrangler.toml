@@ -1,3 +1,14 @@
 name = "salebotban"  # သင့် Worker ရဲ့ နာမည်
 main = "index.js"        # သင့် Bot Code ရေးထားသော file
 compatibility_date = "2024-05-01" # Worker ၏ ဗားရှင်း သတ်မှတ်ချက် (အမှားမရှိစေရန်)
+
+# 🔑 KV Storage ကို ချိတ်ဆက်ခြင်း
+[vars]
+# ဒါက Code ထဲမှာ သုံးမယ့် Binding Name
+KV_BINDING_NAME = "KP_BANNED_LIST" 
+
+[[kv_namespaces]]
+# ဒါက Code ထဲမှာ သုံးမယ့် Binding Name
+binding = "BAN_STORAGE" 
+# ဒါက Cloudflare မှာ ဖန်တီးထားတဲ့ Namespace Name
+id = "018e9a7eebaf4181a8789f1e5872e403" 
